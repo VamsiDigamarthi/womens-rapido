@@ -1,0 +1,137 @@
+.hero {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  /* border: 2px solid red; */
+  padding-top: 80px;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.hero-left {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  /* border: 2px solid red; */
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  color: #333333;
+}
+
+.hero-left > h1 {
+  font-size: 50px;
+  color: #0c1a1a;
+}
+
+.hero-left > p {
+  width: 70%;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-number-card {
+  width: 80%;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5rem;
+  align-items: center;
+}
+
+.hero-number-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.hero-number-card > div > :nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+}
+.hero-number-card > div > :nth-child(2) {
+  font-size: 13px;
+  font-weight: normal;
+  color: gray;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-btn-card {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-btn-card > button {
+  width: 200px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.hero-btn-card > :nth-child(1) {
+  background-color: #ffc0cb;
+  border: none;
+  outline: none;
+  color: #0c1a1a;
+}
+
+.hero-btn-card > :nth-child(2) {
+  border: 2px solid #f79aaa;
+
+  outline: none;
+  color: #f79aaa;
+  background-color: transparent;
+}
+
+.hero-right {
+  width: 20%;
+  /* border: 2px solid yellow; */
+  background-color: #ffc0cb;
+  position: relative;
+}
+
+.hero-right > img {
+  width: 550px;
+  position: absolute;
+  left: -220px;
+  top: 150px;
+}
+
+.hero-right-arrow-image {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  z-index: -9;
+  width: 200px !important;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: fit-content;
+    margin-top: 20px;
+    /* padding: 30px 30px; */
+  }
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    width: 100%;
+  }
+  .hero-left > h1 {
+    font-size: 35px;
+  }
+  .hero-left > p {
+    width: 100%;
+  }
+  .hero-btn-card {
+    flex-direction: column;
+  }
+}

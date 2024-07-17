@@ -1,0 +1,94 @@
+.benefits {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 30px 60px;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+.benefits-left {
+  width: 50%;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.benefits-left > img {
+  width: 100%;
+}
+
+.benefits-right {
+  width: 45%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.benefits-right > h1 {
+  font-size: 45px;
+}
+
+.benefits-right > div {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.benefits-right > div > :nth-child(1) {
+  width: 40px;
+  /* border: 2px solid yellow; */
+}
+
+.benefits-span-of-span {
+  font-size: 18px;
+  font-weight: 400;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.benefits-span-of-span > span {
+  font-weight: bold;
+  color: black;
+}
+
+.benefits-store-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  /* border: 2px solid red; */
+}
+
+.benefits-store-card > img {
+  width: 30% !important;
+}
+
+.benefits-store-card > :nth-child(1) {
+  margin-top: -18px;
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .benefits-left {
+    width: 100%;
+  }
+  .benefits-right {
+    width: 100%;
+  }
+  .benefits-right > h1 {
+    font-size: 28px;
+  }
+}
